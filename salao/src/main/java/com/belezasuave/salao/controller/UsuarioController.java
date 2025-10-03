@@ -9,8 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 public class UsuarioController {
 
     @GetMapping
-    public String hello(){
-        return "oioioi";
+    public String start(){
+        return "Pagina de boas vindas";
+    }
+
+
+    @GetMapping("/login")
+    public String login(){
+        return "pagina de login";
     }
 
 }
