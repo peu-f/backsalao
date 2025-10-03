@@ -19,4 +19,9 @@ public class UsuarioController {
         return "pagina de login";
     }
 
+    @GetMapping("/home")
+    public String home(){
+        return "pagina home";
+    }
+
 }
